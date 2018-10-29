@@ -84,6 +84,13 @@
 }
 
 @include for-mobile {
+    .is-navbar {
+        background-color: rgb(252, 193, 29);
+        width: 100%;
+        left: 0;
+        position: absolute;
+        padding-top: 10px;
+    }
     a {
         & .icon-kube-menu {
             padding: 10px;

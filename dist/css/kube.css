@@ -1525,6 +1525,13 @@ fieldset > .form-item:last-child {
       margin-right: 0; }
 
 @media only screen and (max-width: 767px) {
+  .is-navbar {
+    background-color: #fcc11d;
+    width: 100%;
+    left: 0;
+    position: absolute;
+    padding-top: 10px; }
+
   a .icon-kube-menu {
     padding: 10px; }
 
