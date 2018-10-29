@@ -1442,8 +1442,9 @@ fieldset > .form-item:last-child {
   display: flex;
   flex: 1;
   align-items: center;
-  min-width: 10vh;
-  min-height: 100%;
+  position: fixed;
+  top: 0;
+  min-width: 100%;
   padding: 10px;
   background-color: #fcc11d; }
   @media only screen and (max-width: 767px) {
@@ -1453,7 +1454,8 @@ fieldset > .form-item:last-child {
   .is-navbar-container .is-brand,
   .is-navbar-box .is-brand {
     display: flex;
-    align-items: center; }
+    align-items: center;
+    margin-left: 100px; }
     .is-navbar-container .is-brand h1, .is-navbar-container .is-brand h2, .is-navbar-container .is-brand h3, .is-navbar-container .is-brand h4, .is-navbar-container .is-brand h5, .is-navbar-container .is-brand h6,
     .is-navbar-box .is-brand h1,
     .is-navbar-box .is-brand h2,
@@ -1526,8 +1528,12 @@ fieldset > .form-item:last-child {
   a .icon-kube-menu {
     padding: 10px; }
 
-  .is-navbar-container .is-brand h1 {
-    font-size: 1.75em; }
+  .is-navbar-container {
+    height: 8vh; }
+    .is-navbar-container .is-brand {
+      margin-left: 0px; }
+      .is-navbar-container .is-brand h1 {
+        font-size: 1.75em; }
 
   .is-navbar-container.is-scrollable, .is-navbar-container.is-scrollable .is-navbar, .is-navbar-container.is-scrollable .is-navbar ul,
   .is-navbar-box.is-scrollable,
@@ -1554,6 +1560,9 @@ fieldset > .form-item:last-child {
   .is-navbar-container:not(.is-scrollable) .is-navbar nav.is-justify,
   .is-navbar-box:not(.is-scrollable) .is-navbar nav.is-justify {
     text-align: left; } }
+@media only screen and (min-width: 768px) {
+  .is-navbar-container {
+    height: 7vh; } }
 @keyframes slideUp {
   to {
     height: 0;
@@ -3860,5 +3869,21 @@ figure .is-video-container {
   a, a:link, a:visited {
     color: #000;
     text-decoration: none; } }
+div.page {
+  width: 100%;
+  background-color: #b9b4cd; }
+  div.page h1 {
+    color: #fcc11d; }
+
+@media only screen and (min-width: 768px) {
+  div.page {
+    min-height: 93vh; }
+    div.page.is-first {
+      margin-top: 7vh; } }
+@media only screen and (max-width: 767px) {
+  div.page {
+    min-height: 92vh; }
+    div.page.is-first {
+      margin-top: 8vh; } }
 
 /*# sourceMappingURL=kube.css.map */

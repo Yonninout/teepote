@@ -11,7 +11,7 @@
 
 </head>
 <body>
-	<div class="is-navbar-container">
+	<div class="is-navbar-container is-item-middle">
 	    <div class="is-brand">
 	        <h1>PRIVATE JOKE</h1>
 	        <!-- nav toggle element -->
@@ -34,8 +34,12 @@
 	    </div>
 	</div>
 	
-    <h1>Hello, world!</h1>
-
+    <div class="page is-first">
+    	<h1>Hello, world!</h1>
+    </div>
+    <div class="page">
+    	<h1>Hello, world!</h1>
+    </div>
 
 
     <!-- Kube JS (optional if you are using Kube CSS only) -->

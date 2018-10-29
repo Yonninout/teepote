@@ -1,20 +1,21 @@
 // NAVBAR
 // ---------------------------------------------------------------------------
 
+
 .is-navbar-container,
 .is-navbar-box {
     @include make-container;
     @include flex-items-middle;
-
-    min-width: 10vh;
-    min-height: 100%;
-    // margin: 10px;
+    position: fixed;
+    top: 0;
+    min-width: 100%;
     padding: 10px;
     background-color: $color-orange-teepote;
 
     & .is-brand {
         @include flex;
         @include flex-items-middle;
+        margin-left: 100px;
         & h1,
         & h2,
         & h3,
@@ -89,7 +90,9 @@
         }
     }
     .is-navbar-container{
+        height: $mobile-navbar-height;
         & .is-brand {
+            margin-left: 0px;
             & h1{
                 font-size: $headings-font-size-2;
             }
@@ -126,5 +129,12 @@
                 text-align: left;
             }
         }
+    }
+}
+
+
+@include not-mobile {
+    .is-navbar-container {
+        height: $desktop-navbar-height;
     }
 }

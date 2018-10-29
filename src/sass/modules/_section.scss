@@ -1,0 +1,28 @@
+
+div.page {
+	width: 100%;
+	background-color: $color-gris-teepote;
+	& h1{
+		color: $color-orange-teepote;
+	}
+}
+
+
+
+@include not-mobile {
+	div.page {
+		min-height: $full-height - $desktop-navbar-height;
+		&.is-first{
+			margin-top: $desktop-navbar-height;
+		}
+	}
+}
+
+@include for-mobile {
+	div.page {
+		min-height: $full-height - $mobile-navbar-height;
+		&.is-first{
+			margin-top: $mobile-navbar-height;
+		}
+	}
+}
