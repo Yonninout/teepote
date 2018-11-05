@@ -1,9 +1,14 @@
 
 div.page {
+	// @include flex;
+	// @include flex-items-center;
 	width: 100%;
 	background-color: $color-gris-teepote;
+	background-color: white;
 	& h1{
 		color: $color-orange-teepote;
+		margin: auto;
+		min-width: 100%;
 	}
 }
 

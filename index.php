@@ -36,6 +36,30 @@
 	
     <div class="page is-first">
     	<h1>Hello, world!</h1>
+    	<div class="portfolio is-container is is-items-middle">
+    		<div class="item is-shadow-2" >
+    			<div class="is-inner-item"></div>
+    		</div>
+    		<div class="item is-shadow-2">
+    			
+    		</div>
+       		<div class="item is-shadow-2" >
+    			
+    		</div>
+    		<div class="item is-shadow-2" >
+    			
+    		</div>
+       		<div class="item is-shadow-2" >
+    			
+    		</div>
+       		<div class="item is-shadow-2" >
+    			
+    		</div>
+       		<div class="item is-shadow-2" >
+    			
+    		</div>
+
+    	</div>
     </div>
     <div class="page">
     	<h1>Hello, world!</h1>

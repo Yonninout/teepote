@@ -1446,7 +1446,7 @@ fieldset > .form-item:last-child {
   top: 0;
   min-width: 100%;
   padding: 10px;
-  background-color: #fcc11d; }
+  background-color: #E6BF83; }
   @media only screen and (max-width: 767px) {
     .is-navbar-container,
     .is-navbar-box {
@@ -3878,9 +3878,12 @@ figure .is-video-container {
     text-decoration: none; } }
 div.page {
   width: 100%;
-  background-color: #b9b4cd; }
+  background-color: #b9b4cd;
+  background-color: white; }
   div.page h1 {
-    color: #fcc11d; }
+    color: #fcc11d;
+    margin: auto;
+    min-width: 100%; }
 
 @media only screen and (min-width: 768px) {
   div.page {
@@ -3892,5 +3895,22 @@ div.page {
     min-height: 92vh; }
     div.page.is-first {
       margin-top: 8vh; } }
+div.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  max-width: 1180px;
+  margin: auto; }
+  div.portfolio .item {
+    width: 295px;
+    height: 295px;
+    background-image: url("https://images.unsplash.com/photo-1431578500526-4d9613015464?q=80&fm=jpg&s=169b4f4e6f3882a03b6b93b2e6848052");
+    background-size: cover;
+    background-position: center center; }
+    div.portfolio .item .is-inner-item:hover {
+      background-color: rgba(0, 0, 0, 0.6); }
+    div.portfolio .item .is-inner-item {
+      width: 100%;
+      height: 100%; }
 
 /*# sourceMappingURL=kube.css.map */

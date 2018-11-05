@@ -1,0 +1,21 @@
+div.portfolio {
+	@include flex;
+	@include flex-items-wrap;
+	@include flex-items-left;	
+	max-width: 1180px;
+	margin: auto;
+	.item {
+		width: 295px;
+		height: 295px;
+    	background-image:url('https://images.unsplash.com/photo-1431578500526-4d9613015464?q=80&fm=jpg&s=169b4f4e6f3882a03b6b93b2e6848052');
+		background-size:cover;
+		background-position:center center;
+		.is-inner-item:hover {
+			background-color: rgba(0,0,0,0.6);
+		}
+		.is-inner-item {
+			width: 100%;
+			height: 100%;			
+		}
+	}
+}
